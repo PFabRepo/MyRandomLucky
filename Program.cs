@@ -7,8 +7,26 @@ namespace MyRandomLucky
         static void Main(string[] args)
         {
             Lotto lotto = new Lotto();
-            lotto.RandomDraw();
-          
+
+          /*  for (int i = 1; i <= 15; i++)
+            {
+                Console.WriteLine($"Losowanko nr. {i}");
+                lotto.RandomDraw();
+
+            }*/
+
+            //lotto.RandomEuroJack();
+
+            for (int i = 1; i <= 15; i++)
+            {
+                Console.WriteLine($"Losowanko nr. {i}");
+                lotto.RandomEuroJack();
+
+            }
+
+
+
+
             //lotto.RandomDrawBonus();
             /* for (int i = 0; i < 10; i++)
              {
