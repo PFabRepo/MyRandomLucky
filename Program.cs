@@ -8,21 +8,21 @@ namespace MyRandomLucky
         {
             Lotto lotto = new Lotto();
 
-          /*  for (int i = 1; i <= 15; i++)
+            for (int i = 1; i <= 15; i++)
             {
                 Console.WriteLine($"Losowanko nr. {i}");
                 lotto.RandomDraw();
 
-            }*/
+            }
 
             //lotto.RandomEuroJack();
 
-            for (int i = 1; i <= 15; i++)
-            {
-                Console.WriteLine($"Losowanko nr. {i}");
-                lotto.RandomEuroJack();
+            /*   for (int i = 1; i <= 15; i++)
+               {
+                   Console.WriteLine($"Losowanko nr. {i}");
+                   lotto.RandomEuroJack();
 
-            }
+               }*/
 
 
 
