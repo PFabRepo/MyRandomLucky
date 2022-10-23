@@ -6,9 +6,9 @@ namespace MyRandomLucky
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("<----------LOTTO---------->");
             Lotto lotto = new Lotto();
-
-            for (int i = 1; i <= 15; i++)
+            for (int i = 1; i <= 3; i++)
             {
                 Console.WriteLine($"Losowanko nr. {i}");
                 lotto.RandomDraw();
@@ -16,13 +16,13 @@ namespace MyRandomLucky
             }
 
             //lotto.RandomEuroJack();
+            Console.WriteLine("<----------EUROJACK---------->");
+            for (int i = 1; i <= 3; i++)
+            {
+                Console.WriteLine($"Losowanko nr. {i}");
+                lotto.RandomEuroJack();
 
-            /*   for (int i = 1; i <= 15; i++)
-               {
-                   Console.WriteLine($"Losowanko nr. {i}");
-                   lotto.RandomEuroJack();
-
-               }*/
+            }
 
 
 
@@ -36,5 +36,9 @@ namespace MyRandomLucky
              }*/
 
         }
+
+      
+
+
     }
 }

@@ -8,8 +8,8 @@ namespace MyRandomLucky
 {
     class Lotto
     {
-
         Random rand = new Random();
+
         public void RandomDraw()
         {
             int[] arrayNumbers = new int[7];
@@ -43,15 +43,19 @@ namespace MyRandomLucky
 
         private void RandomNumbersFromList(List<int> list, int counter, int[] tab, int lastNumber)
         {
-            for (int i = 1; i < counter; i++)
+            for (int i = 1; i <= counter; i++)
             {
                 var numbersFromList = list[rand.Next(list.Count)];
                 tab[i] = numbersFromList;
                 list.Remove(numbersFromList);
                 Console.WriteLine($"Wylosowane liczby: {i} ({counter} wybranych) z przedziału od 1 do {lastNumber} to: {tab[i]}");
+               
             }
 
         }
+
+
+
 
     }
 }
